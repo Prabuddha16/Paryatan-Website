@@ -1,0 +1,2 @@
+# Paryatan
+Mini Group Project
