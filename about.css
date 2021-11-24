@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background:linear-gradient(lightblue,rgb(211, 202, 212));
+    min-height: 100vh;
+}
+section
+{
+    position: relative;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(red,#f0f);
+    clip-path: circle(10% at right 90%);
+}
+section::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(55, 226, 235),#e91e63);
+    clip-path: circle(10% at 4% 4%);
+} 
+.container
+{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+}
+.container .card
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background:rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.container .card .content
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: none;
+    
+}
+.container .card:hover .content
+{
+    opacity: none;
+}
+.container .card .content .imagebox
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.25);
+}
+.container .card .content .imagebox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.container .card .content .contentbox h3 span 
+    {
+        
+        font-size: 12px;
+        text-transform: initial;
+        font-weight:300;
+        text-align: center;
+        color: antiquewhite;
+        font-size: 25px;
+    } 
+    
+.container .card:hover .content
+{
+    opacity: 1;
+    transform: translateY(-20px);
+}
