@@ -47,6 +47,8 @@ section{
   background:none;
 }
 
+
+
 .btn{
   display: inline-block;
   margin-top: 1rem;
@@ -54,9 +56,9 @@ section{
   color:#fff;
   padding:.8rem 3rem;
   border:.2rem solid var(--orange);
+  border-radius: 5em;
   cursor: pointer;
   font-size: 1.7rem;
-  border-radius: 25px;
 }
 
 .btn:hover{
@@ -142,6 +144,8 @@ header .search-bar-container label{
 header .search-bar-container label:hover{
   color:var(--orange);
 }
+
+
 
 .login-form-container{
   position: fixed;
@@ -257,9 +261,9 @@ header .search-bar-container label:hover{
 }
 
 .home .content p{
-  font-size: 2.5rem;
-  color:#fff;
-  padding:.5rem 0;
+  font-size: 4rem;
+  color:rgb(255, 239, 215);
+  padding:1rem 0;
 }
 
 .home .video-container video{
@@ -340,6 +344,23 @@ header .search-bar-container label:hover{
   gap:2rem;
 }
 
+.packages .anchor a{
+  font-size: 3.5rem;
+  color: var(--orange);
+  float: right;
+  padding-right: -50px;
+  margin-right: -50px;
+}
+
+.packages .backward a{
+  font-size: 3.5rem;
+  color: var(--orange);
+  float: none;
+  padding-left: -50px;
+  margin-left: -50px;
+ 
+}
+
 .packages .box-container .box{
   flex:1 1 30rem;
   border-radius: .5rem;
@@ -386,7 +407,6 @@ header .search-bar-container label:hover{
 .packages .box-container .box .content .price span{
   color:#666;
   font-size: 1.5rem;
-  text-decoration: line-through;
 }
 
 .services .box-container{
@@ -416,6 +436,11 @@ header .search-bar-container label:hover{
 .services .box-container .box p{
   font-size: 1.5rem;
   color:#666;
+  padding:1rem 0;
+}
+.services .box-container .box a{
+  font-size: 1.5rem;
+  color:var(--orange);
   padding:1rem 0;
 }
 
@@ -480,6 +505,7 @@ header .search-bar-container label:hover{
   text-align: center;
   box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
   border-radius: .5rem;
+  height: 40em;
 }
 
 .review .box img{
@@ -504,6 +530,7 @@ header .search-bar-container label:hover{
 .review .box .stars i{
   color:var(--orange);
   font-size: 1.7rem;
+  
 }
 
 .contact .row{
@@ -591,6 +618,17 @@ header .search-bar-container label:hover{
 .footer .box-container .box a:hover{
   color:var(--orange);
   text-decoration: underline;
+}
+
+.footer .box-container .box i{
+  font-size: 2.5rem;
+  color:white;
+  cursor: pointer;
+  margin-right: 2rem;
+
+}
+.footer .box-container .box i:hover{
+  color:var(--orange);
 }
 
 .footer .credit{
