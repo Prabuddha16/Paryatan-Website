@@ -1,7 +1,6 @@
 # Paryatan
 Mini Group Project
 ![Screenshot (179)](https://user-images.githubusercontent.com/63943167/143686357-d0ee7343-b691-4fca-af66-c52cfa71df14.png)
-![Screenshot (180)](https://user-images.githubusercontent.com/63943167/143686366-3d320a33-a69e-4abd-a61b-ce2c0e3a6e71.png)
 ![Screenshot (196)](https://user-images.githubusercontent.com/63943167/143763831-2c426363-fae3-4d90-91b8-4af1694a96a8.png)
 ![Screenshot (194)](https://user-images.githubusercontent.com/63943167/143763838-e2e81191-f5a2-46ba-b835-eb7e48a8c992.png)
 ![Screenshot (182)](https://user-images.githubusercontent.com/63943167/143686376-4cabeaed-2dd7-4945-a889-debc59852e69.png)
