@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arpit Verma Sec-B feedback form </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="form.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>PAR</span>YATAN</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="national.html">national</a>
+        <a href="international.html">international</a>
+        <a href="theme.html">themes</a>
+        <a href="book.html">book</a>
+        <a href="hotel.html">hotel</a>
+        <a href="gallery.html">gallery</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+        <i class="fas fa-users"><a href="about.html"></a></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="container">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="usa">INDIA</option>
+            <option value="england">England</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="city">City</label>
+        </div>
+        <div class="col-75">
+          <select id="city" name="city">
+            <option value="delhi">Delhi</option>
+            <option value="kanpur">Kanpur</option>
+            <option value="agra">Agra</option>
+            <option value="mathura">Mathura</option>
+            <option value="jaipur">Jaipur</option>
+            <option value="kerala">Kerala</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="sydney">Sydney</option>
+            <option value="london">London</option>
+            <option value="new york">New York</option>
+            
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Your Feedback</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
