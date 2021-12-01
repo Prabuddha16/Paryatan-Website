@@ -1,33 +1,35 @@
-var emailV, nameV, addressV, passwordV;
-
+var nameV, emailV, phoneV, messageV;
 function readFom() {
-  emailV = document.getElementById("email").value;
-  nameV = document.getElementById("name").value;
-  addressV = document.getElementById("address").value;
-  passwordV = document.getElementById("password").value;
-  console.log(emailV, nameV, addressV, passwordV);
+    nameV = document.getElementById("name").value;
+    addressV = document.getElementById("address").value;
+    console.log( nameV, addressV);
+  }
+  
+  function insert(){
+    readFom();
+    
+    firebase
+      .database()
+      .ref("user/" + nameV)
+      .set({
+        name: nameV,
+        address:addressV,
+      });
+      alert("Your message has been sent.");
+    document.getElementById("name").value = "";
+    document.getElementById("address").value = "";
+  
+  };
+function signup(){
+  alert("Successfully Registered");
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  console.log(email,password)
+  firebase.auth().createUserWithEmailAndPassword(email, password).then(function (user) {
+    window.location.href = "login.html"
+  }).catch(function (error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    alert(errorMessage);
+  });
 }
-
-document.getElementById("sign").onclick = function () {
-  readFom();
-
-  firebase
-    .database()
-    .ref("user/" + emailV)
-    .set({
-      email: emailV,
-      name: nameV,
-      address: addressV,
-      password: passwordV,
-    });
-  alert("Data Register");
-  document.getElementById("email").value = "";
-  document.getElementById("name").value = "";
-  document.getElementById("address").value = "";
-  document.getElementById("password").value = "";
-};
-
-
-
-
-

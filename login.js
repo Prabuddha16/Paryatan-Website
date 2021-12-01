@@ -1,27 +1,13 @@
-var emailV, passwordV;
-
-function readFom() {
-  emailV = document.getElementById("email").value;
-  passwordV = document.getElementById("password").value;
-  console.log(emailV, passwordV);
-}
-
-document.getElementById("login").onclick = function () {
-  readFom();
-
-  firebase
-    .database()
-    .ref("user/" + emailV)
-    .set({
-      email: emailV,
-      password: passwordV,
+function login()
+{   
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    console.log(email,password)
+    firebase.auth().signInWithEmailAndPassword(email, password).then(function (user) {
+        window.location.href = "gallery.html";
+    }).catch(function (error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        alert(errorMessage);
     });
-  alert("Data Login");
-  document.getElementById("email").value = "";
-  document.getElementById("password").value = "";
-};
-
-
-
-
-
+}

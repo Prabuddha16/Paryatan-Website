@@ -1,0 +1,112 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body{
+      background-image: url(./images/BACKGROUND.jpg);
+      font-family: cursive;
+      overflow-y:auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    header{
+        background-color: black;
+        color: white;
+        padding: 20px;
+        font-size: 18px;
+        margin-top: -50px;
+        overflow: hidden;
+        background-color: #333;
+        /* position:fixed;  */
+        top: 0; 
+        width: 100%;
+    }
+    header .logoimg
+    {
+    height: 20px;
+    width: 60px;
+    border-radius: 2px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+   
+    
+  </style>
+</head>
+
+
+<body>
+  
+<div id="page-container" style="margin-top:50px; position: relative;min-height: 50vh;">
+    <header>PARYATAN<button style="float: right;"><a href="./index.html">Home</a></button></header>
+  <div class="container"><br>
+    
+  <div id="content-wrap" style="padding-bottom:50px;">
+    <h1 class="mt-4 mb-3"><u>Contact</u></h1>
+    <div class="row">
+      <div class="col-lg-8 mb-4">
+        <h3><u>Send us a Message</u></h3>
+        <form name="sentMessage"  method="post">
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Full Name:</label>
+                    <input type="text" class="form-control" id="name" name="fullname" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"required>
+                    <p class="help-block"></p>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Phone Number:</label>
+                    <input type="tel" class="form-control" id="phone" name="contactno" onkeypress="javascript:return isNumber(event)" >
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Email Address:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="control-group form-group">
+                <div class="controls">
+                    <label>Message:</label>
+                    <textarea rows="10" cols="100" class="form-control" id="message" name="message" required  maxlength="999" style="resize:none;"></textarea>
+                </div>
+            </div>
+            <button type="submit" name="send"  class="btn btn-primary" id="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="col-lg-4 mb-4">
+        <h2><u>Contact Details</u></h2>
+        
+        <br>
+        <p>
+            <h4><u>Address :</u><br><span style="font-size: 20px;">119,punjabi House, Budhwar Peth, Pune(Maharashtra)</span></h4>
+        </p>
+        <p>
+            <h4><u>Contact Number :</u><br><span style="font-size: 20px;">406-5601-9845</span></h4>
+        </p>
+        <p>
+          <h4> <u>Email:</u>  </h4><a href="#"><span style="font-size: 20px;">paryatan@gmail.com</span>
+          </a></b>
+        </p>
+        
+    </div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+<script src="./contact.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+<script src="./fireConfig.js"></script>
+</body>
+
+</html>
